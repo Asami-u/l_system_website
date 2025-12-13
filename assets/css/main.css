@@ -4,6 +4,9 @@
 body {
   font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", Meiryo, "メイリオ", Osaka, "ＭＳ Ｐゴシック", sans-serif;
   color: #333333;
+  font-size: 12pt;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 h2.title {
@@ -47,6 +50,14 @@ header#header .header-inner img {
   width: 100px;
   padding: 0;
 }
+@media (max-width: 640px) {
+  header#header .header-inner img {
+    width: 80px;
+  }
+}
+header#header .header-inner button {
+  background-color: transparent;
+}
 header#header .header-inner nav ul {
   color: #ffffff;
   list-style: none;
@@ -79,8 +90,8 @@ header#header .header-inner nav ul li a:hover {
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 42px;
-  height: 30px;
+  width: 38px;
+  height: 26px;
   background: none;
   border: none;
   cursor: pointer;
@@ -93,7 +104,7 @@ header#header .header-inner nav ul li a:hover {
 
 .hamburger span {
   display: block;
-  height: 4px;
+  height: 3px;
   width: 100%;
   background: #fff;
   transition: all 0.3s ease;
@@ -101,7 +112,7 @@ header#header .header-inner nav ul li a:hover {
 
 /* メニュー開閉時のアニメーション */
 .hamburger.active span:nth-child(1) {
-  transform: translateY(13px) rotate(45deg);
+  transform: translateY(11px) rotate(45deg);
 }
 
 .hamburger.active span:nth-child(2) {
@@ -109,7 +120,7 @@ header#header .header-inner nav ul li a:hover {
 }
 
 .hamburger.active span:nth-child(3) {
-  transform: translateY(-13px) rotate(-45deg);
+  transform: translateY(-12px) rotate(-45deg);
 }
 
 /* ---------------------------
@@ -119,7 +130,7 @@ header#header .header-inner nav ul li a:hover {
   nav ul {
     flex-direction: column;
     position: absolute;
-    top: 77px;
+    top: 65px;
     right: 0;
     background: rgba(0, 0, 0, 0.9019607843);
     width: 100%;
@@ -142,6 +153,13 @@ header#header .header-inner nav ul li a:hover {
   background-size: cover;
   height: 100vh;
 }
+@media (max-width: 640px) {
+  #mv.mainVisual {
+    background-position-y: 28%;
+    background-size: 300%;
+    background-position-x: 50%;
+  }
+}
 #mv.mainVisual .inner {
   text-align: center;
   transform: translateY(120%);
@@ -153,17 +171,27 @@ header#header .header-inner nav ul li a:hover {
   font-size: 48px;
   margin-bottom: 1rem;
 }
+@media (max-width: 640px) {
+  #mv.mainVisual .inner h1 {
+    font-size: 38px;
+  }
+}
 #mv.mainVisual .inner h1 strong {
   color: #ffffff;
+}
+#mv.mainVisual .inner h1 strong br {
+  display: block;
 }
 #mv.mainVisual .inner p {
   color: #ffffff;
 }
 #mv.mainVisual .inner ul li a.button {
-  color: #ffffff !important;
+  color: #e72e7e !important;
   box-shadow: 10px 5px 5px #e72e7e;
   box-shadow: none;
   border: 1px solid #e72e7e;
+  max-width: 200px;
+  background-color: rgba(255, 255, 255, 0.6901960784);
 }
 
 #about_us .row {
