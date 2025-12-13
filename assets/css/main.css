@@ -178,7 +178,7 @@ header#header .header-inner nav ul li a:hover {
 }
 @media (max-width: 640px) {
   #mv.mainVisual .inner h1 {
-    font-size: 38px;
+    font-size: 36px;
   }
 }
 #mv.mainVisual .inner h1 strong {
