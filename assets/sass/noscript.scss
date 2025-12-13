@@ -1,0 +1,25 @@
+@use "sass:color";
+@use "./libs/functions";
+@use "./libs/mixins";
+@use "./libs/vendor";
+@use "./libs/breakpoints";
+
+/* Header */
+
+body.is-preload {
+  #header {
+    .inner {
+      @include vendor.vendor('transform', 'none'); 
+      opacity: 1;
+
+      .actions {
+        @include vendor.vendor('transform', 'none');
+        opacity: 1;
+      }
+    }
+
+    &:after {
+      opacity: 0;
+    }
+  }
+}
