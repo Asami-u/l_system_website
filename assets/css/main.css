@@ -160,13 +160,13 @@ header#header .header-inner nav ul li a:hover {
 @media (max-width: 640px) {
   #mv.mainVisual {
     background-position-y: 28%;
-    background-size: 300%;
+    background-size: 200%;
     background-position-x: 50%;
   }
 }
 #mv.mainVisual .inner {
   text-align: center;
-  transform: translateY(120%);
+  transform: translateY(40%);
 }
 #mv.mainVisual .inner h1 {
   font-family: "m-plus-2p", sans-serif;
@@ -196,6 +196,11 @@ header#header .header-inner nav ul li a:hover {
   border: 1px solid #e72e7e;
   max-width: 200px;
   background-color: rgba(255, 255, 255, 0.6901960784);
+  transition: 0.3s;
+}
+#mv.mainVisual .inner ul li a.button:hover {
+  border-bottom-color: #e72e7e !important;
+  opacity: 0.8;
 }
 
 #about_us .row {
@@ -2990,7 +2995,7 @@ button:disabled,
 }
 
 /* Header */
-#header {
+#mv {
   padding: 9em 0 9em 0;
   background-color: #4686a0;
   color: rgba(255, 255, 255, 0.75);
@@ -3002,80 +3007,80 @@ button:disabled,
   position: relative;
   text-align: center;
 }
-#header a {
+#mv a {
   border-bottom-color: rgba(255, 255, 255, 0.5);
 }
-#header a:hover {
+#mv a:hover {
   color: #ffffff;
 }
-#header h1, #header h2, #header h3, #header h4, #header h5, #header h6, #header strong, #header b {
+#mv h1, #mv h2, #mv h3, #mv h4, #mv h5, #mv h6, #mv strong, #mv b {
   color: #ffffff;
 }
-#header header p {
+#mv header p {
   color: #ffffff;
 }
-#header header.major:after {
+#mv header.major:after {
   background: #ffffff;
 }
-#header input[type=submit],
-#header input[type=reset],
-#header input[type=button],
-#header button,
-#header .button {
+#mv input[type=submit],
+#mv input[type=reset],
+#mv input[type=button],
+#mv button,
+#mv .button {
   box-shadow: inset 0 0 0 1px #ffffff;
   color: #ffffff !important;
 }
-#header input[type=submit]:hover,
-#header input[type=reset]:hover,
-#header input[type=button]:hover,
-#header button:hover,
-#header .button:hover {
+#mv input[type=submit]:hover,
+#mv input[type=reset]:hover,
+#mv input[type=button]:hover,
+#mv button:hover,
+#mv .button:hover {
   background-color: rgba(255, 255, 255, 0.125);
 }
-#header input[type=submit]:active,
-#header input[type=reset]:active,
-#header input[type=button]:active,
-#header button:active,
-#header .button:active {
+#mv input[type=submit]:active,
+#mv input[type=reset]:active,
+#mv input[type=button]:active,
+#mv button:active,
+#mv .button:active {
   background-color: rgba(255, 255, 255, 0.25);
 }
-#header input[type=submit].primary,
-#header input[type=reset].primary,
-#header input[type=button].primary,
-#header button.primary,
-#header .button.primary {
+#mv input[type=submit].primary,
+#mv input[type=reset].primary,
+#mv input[type=button].primary,
+#mv button.primary,
+#mv .button.primary {
   background-color: #ffffff;
   box-shadow: inset 0 0 0 1px #ffffff !important;
   color: #4686a0 !important;
 }
-#header input[type=submit].primary:hover,
-#header input[type=reset].primary:hover,
-#header input[type=button].primary:hover,
-#header button.primary:hover,
-#header .button.primary:hover {
+#mv input[type=submit].primary:hover,
+#mv input[type=reset].primary:hover,
+#mv input[type=button].primary:hover,
+#mv button.primary:hover,
+#mv .button.primary:hover {
   background-color: rgba(255, 255, 255, 0.125) !important;
   color: #ffffff !important;
 }
-#header input[type=submit].primary:active,
-#header input[type=reset].primary:active,
-#header input[type=button].primary:active,
-#header button.primary:active,
-#header .button.primary:active {
+#mv input[type=submit].primary:active,
+#mv input[type=reset].primary:active,
+#mv input[type=button].primary:active,
+#mv button.primary:active,
+#mv .button.primary:active {
   background-color: rgba(255, 255, 255, 0.25) !important;
 }
-#header ul.major-icons li .icon {
+#mv ul.major-icons li .icon {
   border-color: #ffffff;
 }
-#header .icon.major {
+#mv .icon.major {
   color: #ffffff;
 }
-#header h1 {
+#mv h1 {
   margin: 0;
 }
-#header p {
+#mv p {
   margin: 1em 0 0 0;
 }
-#header .actions {
+#mv .actions {
   -moz-justify-content: center;
   -webkit-justify-content: center;
   -ms-justify-content: center;
@@ -3084,10 +3089,10 @@ button:disabled,
   margin-left: 0;
   position: relative;
 }
-#header .actions li:first-child {
+#mv .actions li:first-child {
   padding-left: 0;
 }
-#header .actions:after {
+#mv .actions:after {
   background: #ffffff;
   content: "";
   height: 100vh;
@@ -3096,7 +3101,7 @@ button:disabled,
   top: 100%;
   width: 1px;
 }
-#header .inner {
+#mv .inner {
   -moz-transition: -moz-transform 1.5s ease, opacity 2s ease;
   -webkit-transition: -webkit-transform 1.5s ease, opacity 2s ease;
   -ms-transition: -ms-transform 1.5s ease, opacity 2s ease;
@@ -3113,7 +3118,7 @@ button:disabled,
   position: relative;
   z-index: 1;
 }
-#header .inner .actions {
+#mv .inner .actions {
   -moz-transition: -moz-transform 1.25s ease;
   -webkit-transition: -webkit-transform 1.25s ease;
   -ms-transition: -ms-transform 1.25s ease;
@@ -3128,7 +3133,7 @@ button:disabled,
   transform: translateY(0);
   opacity: 1;
 }
-#header:after {
+#mv:after {
   -moz-transition: opacity 1s ease;
   -webkit-transition: opacity 1s ease;
   -ms-transition: opacity 1s ease;
@@ -3143,21 +3148,21 @@ button:disabled,
   width: 100%;
 }
 
-body.is-preload #header .inner {
+body.is-preload #mv .inner {
   -moz-transform: scale(1.05);
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
   transform: scale(1.05);
   opacity: 0;
 }
-body.is-preload #header .inner .actions {
+body.is-preload #mv .inner .actions {
   -moz-transform: translateY(30em);
   -webkit-transform: translateY(30em);
   -ms-transform: translateY(30em);
   transform: translateY(30em);
   opacity: 0;
 }
-body.is-preload #header:after {
+body.is-preload #mv:after {
   opacity: 1;
 }
 
@@ -3268,7 +3273,7 @@ body.is-preload #header:after {
     font-size: 14pt;
   }
   /* Header */
-  #header {
+  #mv {
     padding: 6em 0 6em 0;
   }
 }
@@ -3298,11 +3303,11 @@ body.is-preload #header:after {
     background-attachment: scroll;
   }
   /* Header */
-  #header {
+  #mv {
     padding: 5em 0 5em 0;
     background-attachment: scroll;
   }
-  #header br {
+  #mv br {
     display: inline;
   }
   /* Footer */
@@ -3327,7 +3332,7 @@ body.is-preload #header:after {
     padding: 5em 3em 3em 3em;
   }
   /* Header */
-  #header {
+  #mv {
     padding: 8em 3em 8em 3em;
   }
   /* Footer */

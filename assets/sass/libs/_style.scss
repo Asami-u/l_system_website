@@ -159,12 +159,12 @@ header{
     height: 100vh;
     @media (max-width: 640px){
         background-position-y: 28%;
-        background-size: 300%;
+        background-size: 200%;
         background-position-x: 50%;
     }
     .inner{
         text-align: center;
-        transform: translateY(120%);
+        transform: translateY(40%);
         h1{
             font-family: "m-plus-2p", sans-serif;
             font-weight: 900;
@@ -191,6 +191,11 @@ header{
                     border: 1px solid #e72e7e;
                     max-width: 200px;
                     background-color: #ffffffb0;
+                    transition: .3s;
+                    &:hover{
+                        border-bottom-color: #e72e7e !important;
+                        opacity: 0.8;
+                    }
                 }
             }
         }
