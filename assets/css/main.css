@@ -162,6 +162,7 @@ header#header .header-inner nav ul li a:hover {
     background-position-y: 28%;
     background-size: 200%;
     background-position-x: 50%;
+    padding: 8em 3%;
   }
 }
 #mv.mainVisual .inner {
