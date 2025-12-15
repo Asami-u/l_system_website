@@ -54,6 +54,11 @@ header#header .header-inner img {
   width: 100px;
   padding: 0;
 }
+@media (max-width: 960px) {
+  header#header .header-inner img {
+    width: 80px;
+  }
+}
 @media (max-width: 640px) {
   header#header .header-inner img {
     width: 80px;
@@ -67,6 +72,11 @@ header#header .header-inner nav ul {
   list-style: none;
   margin: 0;
 }
+@media (max-width: 960px) {
+  header#header .header-inner nav ul li {
+    padding-left: 14px;
+  }
+}
 @media (max-width: 640px) {
   header#header .header-inner nav ul li {
     text-align: center;
@@ -77,6 +87,11 @@ header#header .header-inner nav ul {
 header#header .header-inner nav ul li a {
   border: none;
   font-size: 16px;
+}
+@media (max-width: 960px) {
+  header#header .header-inner nav ul li a {
+    font-size: 14px;
+  }
 }
 header#header .header-inner nav ul li a:hover {
   color: #e72e7e;
@@ -279,6 +294,7 @@ header#header .header-inner nav ul li a:hover {
   #q-satisfaction .question p {
     line-height: 1.5;
     padding-top: 24px;
+    width: 80%;
   }
 }
 
@@ -363,11 +379,19 @@ header#header .header-inner nav ul li a:hover {
   height: 280px;
   overflow: hidden;
   display: block;
+  object-fit: contain;
+}
+@media (max-width: 640px) {
+  #join-us .row .point .join-us__img {
+    height: 200px;
+  }
 }
 #join-us .row .point .join-us__img img {
-  width: 100%;
+  width: auto;
   height: 100%;
-  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  transform: translateY(-7%);
 }
 #join-us .row .point .row {
   flex-wrap: nowrap;
@@ -451,29 +475,44 @@ header#header .header-inner nav ul li a:hover {
   margin: 0;
 }
 
-#contact {
-  background-color: #d4dfdf;
+#cta {
+  background-image: url(/images/track.jpg);
+  background-size: cover;
+  background-position-y: 60%;
+  background-blend-mode: soft-light;
+  background-color: rgba(224, 249, 253, 0.4509803922);
+  background: linear-gradient(135deg, #7fcfb9, #acd5cb);
+  padding: 40px 0;
 }
-#contact form {
-  width: 60%;
+#cta .container {
+  max-width: 960px;
   margin: 0 auto;
-}
-@media (max-width: 640px) {
-  #contact form {
-    width: 90%;
-  }
-}
-#contact form label {
   text-align: left;
-  margin-bottom: 4px;
-  font-size: 16px;
-  font-weight: bold;
 }
-#contact form input[type=text],
-#contact form input[type=password],
-#contact form input[type=email],
-#contact form select, #contact form textarea {
-  background-color: #ffffff;
+#cta .container.row {
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding-top: 24px;
+  border-radius: 5px;
+}
+#cta .container.row .left {
+  padding: 0;
+}
+#cta .container.row .left p {
+  color: #333;
+}
+#cta .container.row .right a.button {
+  background-color: #e72e7e;
+  color: #ffffff !important;
+  font-weight: bold;
+  padding: 10px 20px;
+  height: auto;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2705882353);
+  transition: 0.3s;
+}
+#cta .container.row .right a.button:hover {
+  box-shadow: none;
 }
 
 #recruitment_information .table-wrapper {
@@ -534,6 +573,65 @@ header#header .header-inner nav ul li a:hover {
 #footer.bg .copyright {
   margin-top: 5em;
   padding: 0;
+}
+
+#contact {
+  padding-top: 8em;
+  background-color: #d4dfdf;
+}
+#contact p {
+  color: #333333;
+  font-size: 16px;
+  text-align: center;
+}
+#contact form {
+  width: 60%;
+  margin: 0 auto;
+}
+@media (max-width: 640px) {
+  #contact form {
+    width: 90%;
+  }
+}
+#contact form label {
+  text-align: left;
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-weight: bold;
+}
+#contact form input[type=text],
+#contact form input[type=password],
+#contact form input[type=email],
+#contact form select, #contact form textarea {
+  background-color: #ffffff;
+  color: #333333;
+}
+#contact form .actions li {
+  margin: 0 auto;
+  padding: 0;
+}
+#contact form .actions li input {
+  background-color: #e72e7e;
+  color: #ffffff !important;
+  font-weight: bold;
+  padding: 10px 20px;
+  height: auto;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2705882353) !important;
+  transition: 0.3s !important;
+  min-width: 200px;
+}
+#contact form .actions li input:hover {
+  box-shadow: none !important;
+}
+
+#thanks {
+  padding-top: 8em;
+  background-color: #d4dfdf;
+}
+#thanks p {
+  color: #333333;
+  font-size: 16px;
+  text-align: center;
 }
 
 /* -------------------------------------------
