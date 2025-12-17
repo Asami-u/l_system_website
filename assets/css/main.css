@@ -25,6 +25,22 @@ header.major:after {
   background: rgba(144, 144, 144, 0.5);
 }
 
+.cta {
+  padding-left: 0 !important;
+}
+.cta a.button {
+  background-color: #e72e7e;
+  color: #ffffff !important;
+  font-weight: bold;
+  padding: 10px 20px;
+  height: auto;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2705882353);
+  transition: 0.3s;
+}
+.cta a.button:hover {
+  box-shadow: none;
+}
+
 .mb1 {
   margin-bottom: 1rem;
 }
@@ -366,7 +382,7 @@ header#header .header-inner nav ul li a:hover {
 #join-us .row .point {
   position: relative;
   padding: 20px;
-  margin-bottom: 70px;
+  margin-bottom: 20px;
   width: 47%;
 }
 @media (max-width: 640px) {
@@ -379,7 +395,6 @@ header#header .header-inner nav ul li a:hover {
   height: 280px;
   overflow: hidden;
   display: block;
-  object-fit: contain;
 }
 @media (max-width: 640px) {
   #join-us .row .point .join-us__img {
@@ -387,11 +402,11 @@ header#header .header-inner nav ul li a:hover {
   }
 }
 #join-us .row .point .join-us__img img {
-  width: auto;
+  width: 100%;
   height: 100%;
   display: block;
   margin: 0 auto;
-  transform: translateY(-7%);
+  object-fit: cover;
 }
 #join-us .row .point .row {
   flex-wrap: nowrap;
@@ -482,37 +497,42 @@ header#header .header-inner nav ul li a:hover {
   background-blend-mode: soft-light;
   background-color: rgba(224, 249, 253, 0.4509803922);
   background: linear-gradient(135deg, #7fcfb9, #acd5cb);
-  padding: 40px 0;
+  padding: 40px 5%;
 }
 #cta .container {
   max-width: 960px;
   margin: 0 auto;
   text-align: left;
 }
+@media (max-width: 800px) {
+  #cta .container .major:after {
+    display: block;
+    margin: 1.5em auto;
+  }
+}
+@media (max-width: 800px) {
+  #cta .container .title {
+    text-align: center;
+  }
+}
 #cta .container.row {
   align-items: center;
   justify-content: space-around;
   background-color: rgba(255, 255, 255, 0.8);
-  padding-top: 24px;
+  padding: 24px 20px;
   border-radius: 5px;
+}
+@media (max-width: 800px) {
+  #cta .container.row {
+    flex-direction: column;
+  }
 }
 #cta .container.row .left {
   padding: 0;
 }
 #cta .container.row .left p {
   color: #333;
-}
-#cta .container.row .right a.button {
-  background-color: #e72e7e;
-  color: #ffffff !important;
-  font-weight: bold;
-  padding: 10px 20px;
-  height: auto;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2705882353);
-  transition: 0.3s;
-}
-#cta .container.row .right a.button:hover {
-  box-shadow: none;
+  margin-bottom: 1rem;
 }
 
 #recruitment_information .table-wrapper {
