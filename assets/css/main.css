@@ -676,7 +676,7 @@ header#header .header-inner nav ul li a:hover {
 }
 
 #thanks {
-  padding-top: 8em;
+  padding-top: 8em !important;
   background-color: #d4dfdf;
 }
 #thanks p {
