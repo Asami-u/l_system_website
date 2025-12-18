@@ -158,7 +158,7 @@ header{
 @media (max-width: 640px) {
   nav ul {
     flex-direction: column;
-    position: absolute;
+    position: initial;
     top: 65px;
     right: 0;
     background: #000000e6;
@@ -166,12 +166,13 @@ header{
     height: 100vh;
     padding-top: 3rem;
     box-shadow: -4px 0 10px rgba(0,0,0,0.1);
-    transform: translateX(100%);
     transition: transform 0.4s ease;
+    display: none;
   }
 
   nav.open ul {
-    transform: translateX(0);
+    position: absolute;
+    
   }
 
   .hamburger {
