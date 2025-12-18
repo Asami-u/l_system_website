@@ -77,10 +77,12 @@ header{
             background-color: transparent;
         } 
         nav{
-            display: none;
-            &.open{
-                display: block;
-            }
+            @media (max-width: 640px){
+                display: none;
+                    &.open{
+                        display: block;
+                    }
+                }
             ul{
                 color:#ffffff;
                 list-style: none;margin: 0;

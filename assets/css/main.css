@@ -83,11 +83,13 @@ header#header .header-inner img {
 header#header .header-inner button {
   background-color: transparent;
 }
-header#header .header-inner nav {
-  display: none;
-}
-header#header .header-inner nav.open {
-  display: block;
+@media (max-width: 640px) {
+  header#header .header-inner nav {
+    display: none;
+  }
+  header#header .header-inner nav.open {
+    display: block;
+  }
 }
 header#header .header-inner nav ul {
   color: #ffffff;
