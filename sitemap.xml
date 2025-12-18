@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- トップページ -->
+  <url>
+    <loc>https://drivers-lsy.jp/</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- お問い合わせ -->
+  <url>
+    <loc>https://drivers-lsy.jp/contact.html</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- 送信完了ページ -->
+  <url>
+    <loc>https://drivers-lsy.jp/thanks.html</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>
