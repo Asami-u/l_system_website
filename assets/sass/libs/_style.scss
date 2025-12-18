@@ -558,19 +558,38 @@ header{
             flex-wrap: nowrap;
             justify-content: space-between;
             align-items: center;
+            @media (max-width: 640px){
+                flex-direction: column;
+                margin: 0 auto;
+            }
             img{
                 width: 180px;
+                @media (max-width: 640px){
+                    padding: 0;
+                    width: 100px;
+                }
             }
             nav{
+                @media (max-width: 640px){
+                    margin-top: 1rem;
+                    padding: 0;
+                }
                 ul{
                     list-style: none;
                     padding: 0;
                     margin: 0;
+                    gap: 1rem;
                     @media (max-width: 640px){
-                        flex-direction: column;
+                        background-color: transparent;
+                        flex-direction: row;
+                        box-shadow: none;
+                        height: auto;
+                        flex-wrap: wrap;
+                        justify-content: center;
                         }
                     li{
                         font-size: 14px;
+                        padding: 0;
                         a{
                             border: none;
                         }
@@ -579,7 +598,7 @@ header{
             }
         }
         .copyright{
-            margin-top: 5em;
+            margin-top: 4em;
             padding: 0;
         }
     }
