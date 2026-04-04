@@ -101,11 +101,7 @@ header.major:after {
   transform: translateY(0);
 }
 
-.fade-item {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
+#mv.mainVisual
 
 .fade-left {
   transform: translateX(-40px);
@@ -284,11 +280,6 @@ header#header .header-inner nav ul li a:hover {
   text-align: center;
   transform: translateY(70%);
 }
-@media (max-width: 640px) {
-  #mv.mainVisual .inner h1 {
-    font-size: 36px;
-  }
-}
 #mv.mainVisual .inner h1 strong {
   font-family: "m-plus-2p", sans-serif;
   font-weight: 800;
@@ -298,6 +289,16 @@ header#header .header-inner nav ul li a:hover {
   color: #ffffff;
   line-height: 1.3;
 }
+
+@media (max-width: 640px) {
+  #mv.mainVisual .inner{
+    transform: translateY(64%);
+  }
+  #mv.mainVisual .inner h1 strong {
+    font-size: 36px;
+  }
+}
+
 #mv.mainVisual .inner h1 strong br {
   display: block;
 }
