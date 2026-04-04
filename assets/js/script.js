@@ -46,33 +46,39 @@ document.addEventListener("DOMContentLoaded", function() {
         observer.unobserve(entry.target); 
       }
     });
-  }, { threshold: 1 });
+  }, { 
+    threshold: 0.1,
+    rootMargin: "0px 0px -80px 0px"
+  });
 
   faders.forEach(fader => {
     observer.observe(fader);
   });
 });
 
-// 順番にフェードイン
+// 順番フェード
 document.addEventListener("DOMContentLoaded", function() {
-  const fadeItems = document.querySelectorAll(".fade-item");
+  const fadeItems = document.querySelectorAll(".fade-container");
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        // スクロールして見えたら順番に表示
         const items = entry.target.querySelectorAll(".fade-item");
         items.forEach((item, index) => {
           setTimeout(() => {
             item.classList.add("visible");
-          }, index * 400); // 200msずつ遅らせる
+          }, index * 200); // 少し速めにするとスマホで見やすい
         });
-        observer.unobserve(entry.target); // 1回だけ発火
+        observer.unobserve(entry.target);
       }
     });
   }, {
-    threshold: 0.6
+    threshold: 0.1,
+    rootMargin: "0px 0px -80px 0px"
   });
+
+  fadeItems.forEach(el => observer.observe(el));
+
 
   // 各セクションを監視
   document.querySelectorAll(".fade-section").forEach((section) => {
